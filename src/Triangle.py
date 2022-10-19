@@ -2,8 +2,10 @@ import math
 
 from Figure import Figure
 
+
 class Triangle(Figure):
-    """класс для треугольника"""  
+    """класс для треугольника"""
+
     def __init__(self, name, a, b, c):
         super().__init__(name, a)
         self.b = b
@@ -18,5 +20,5 @@ class Triangle(Figure):
 
     @property
     def area(self):
-        p = int(self.perimeter/2)
-        return math.isqrt(p*(p-self.a)*(p-self.b)*(p-self.c))
+        p = int(self.perimeter / 2)
+        return math.isqrt(p * (p - self.a) * (p - self.b) * (p - self.c))
