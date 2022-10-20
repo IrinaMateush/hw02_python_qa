@@ -1,10 +1,8 @@
-from Figure import Figure
+from Rectangle import Rectangle
 
-class Square(Figure):
-    """класс для квадрата"""  
-    def __init__(self, name, a):
-        super().__init__(name,a)
 
-    @property
-    def perimeter(self): 
-        return self.a*4
+class Square(Rectangle):
+    """класс для квадрата"""
+
+    def __init__(self, name, a, b):
+        super().__init__(name, a, b)

@@ -17,8 +17,3 @@ class Circle(Figure):
     @property
     def area(self):
         return int(self.radius**2 * math.pi)
-
-
-dd = Circle('ectangle', 5)
-print(dd.perimeter)
-print(dd.area)
