@@ -8,6 +8,9 @@ class Rectangle(Figure):
         super().__init__(name, a)
         self.b = b
 
+        if b <= 0:
+            raise ValueError('Оnly positive values')
+            
     @property
     def perimeter(self):
         return (self.a + self.b) * 2

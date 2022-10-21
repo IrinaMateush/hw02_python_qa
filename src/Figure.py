@@ -8,6 +8,9 @@ class Figure:
         self.name = name
         self.a = a
 
+        if a <= 0:
+            raise ValueError('Оnly positive values')
+
         if name not in FIGURES:
             raise ValueError('It is not figure')
 

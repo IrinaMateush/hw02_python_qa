@@ -11,6 +11,12 @@ class Triangle(Figure):
         self.b = b
         self.c = c
 
+        if b <= 0:
+            raise ValueError('Оnly positive values')
+
+        if c <= 0:
+            raise ValueError('Оnly positive values')
+
         if (self.a + self.b) < self.c:
             raise ValueError('It is not triangle')
 
@@ -22,3 +28,6 @@ class Triangle(Figure):
     def area(self):
         p = int(self.perimeter / 2)
         return math.isqrt(p * (p - self.a) * (p - self.b) * (p - self.c))
+
+cc = Triangle('triangle', 1, 1, 1)
+
