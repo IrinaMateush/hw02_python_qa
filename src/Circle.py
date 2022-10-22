@@ -2,12 +2,11 @@ import math
 
 from Figure import Figure
 
-
 class Circle(Figure):
     """класс для круга"""
 
-    def __init__(self, name, radius):
-        super().__init__(name, radius)
+    def __init__(self, radius):
+        super().__init__(radius)
         self.radius = radius
 
     @property

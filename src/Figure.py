@@ -1,22 +1,17 @@
-FIGURES = ['circle', 'rectangle', 'square', 'triangle']
-
-
 class Figure:
     """Базовый класс для всех фигур"""
 
-    def __init__(self, name, a):
-        self.name = name
+    def __init__(self, a):
         self.a = a
 
         if a <= 0:
             raise ValueError('Оnly positive values')
-
-        if name not in FIGURES:
-            raise ValueError('It is not figure')
 
     @property
     def area(self):
         pass
 
     def add_area(self, figure):
+        if isinstance(figure, Figure)==False:
+            raise ValueError('It is not figure')
         return self.area + figure.area

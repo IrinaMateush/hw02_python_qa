@@ -6,8 +6,8 @@ from Figure import Figure
 class Triangle(Figure):
     """класс для треугольника"""
 
-    def __init__(self, name, a, b, c):
-        super().__init__(name, a)
+    def __init__(self, a, b, c):
+        super().__init__(a)
         self.b = b
         self.c = c
 
@@ -28,6 +28,4 @@ class Triangle(Figure):
     def area(self):
         p = int(self.perimeter / 2)
         return math.isqrt(p * (p - self.a) * (p - self.b) * (p - self.c))
-
-cc = Triangle('triangle', 1, 1, 1)
 

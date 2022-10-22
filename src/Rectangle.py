@@ -4,8 +4,8 @@ from Figure import Figure
 class Rectangle(Figure):
     """класс для прямоугольника"""
 
-    def __init__(self, name, a, b):
-        super().__init__(name, a)
+    def __init__(self, a, b):
+        super().__init__(a)
         self.b = b
 
         if b <= 0:
