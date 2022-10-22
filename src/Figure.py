@@ -12,6 +12,6 @@ class Figure:
         pass
 
     def add_area(self, figure):
-        if isinstance(figure, Figure)==False:
+        if isinstance(figure, Figure) == False:
             raise ValueError('It is not figure')
         return self.area + figure.area

@@ -10,7 +10,7 @@ class Rectangle(Figure):
 
         if b <= 0:
             raise ValueError('Оnly positive values')
-            
+
     @property
     def perimeter(self):
         return (self.a + self.b) * 2

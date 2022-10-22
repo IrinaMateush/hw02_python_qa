@@ -2,6 +2,7 @@ import math
 
 from Figure import Figure
 
+
 class Circle(Figure):
     """класс для круга"""
 

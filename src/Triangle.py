@@ -28,4 +28,3 @@ class Triangle(Figure):
     def area(self):
         p = int(self.perimeter / 2)
         return math.isqrt(p * (p - self.a) * (p - self.b) * (p - self.c))
-
